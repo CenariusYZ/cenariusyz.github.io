@@ -6,8 +6,8 @@ encoding: utf-8
 theme_settings:
   # Meta
   title: CenariusYZ
-  avatar: assets/img/triangle.svg
-  favicon: assets/favicon.ico
+  avatar: assets/img/34.jpg
+  favicon: assets/icoo.ico
   gravatar: # Email MD5 hash
   description: "Nothing is true." # used by search engines
 
@@ -16,11 +16,11 @@ theme_settings:
      <p> Nothing is true.<br>Everything is permitted.</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+   <p> 2018 CenariusYZ </p>
 
   # Icons
   rss: true  # Make sure you created a feed.xml with feed.xml layout
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: 409004007@qq.com
   behance:
   bitbucket:
   dribbble:
