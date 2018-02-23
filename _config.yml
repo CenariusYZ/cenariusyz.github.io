@@ -14,13 +14,13 @@ nav:
 
 # Footer
 footer:
-  since: 2017
+  since: 2018
 
 # Author 配置博主信息
 author: 'CenariusYZ'
 nickname: 'YZ'
 bio: 'OIer / Drumer / Loser'
-avatar: '/assets/img/head.jpg'
+avatar: '/assets/img/head.png'
 
 # Search
 search: true
