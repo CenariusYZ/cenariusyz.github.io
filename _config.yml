@@ -1,91 +1,86 @@
-# SITE CONFIGURATION
-baseurl: 
-url: https://cenariusyz.github.io
-encoding: utf-8
-# THEME-SPECIFIC CONFIGURATION
-theme_settings:
-  # Meta
-  title: CenariusYZ
-  avatar: assets/img/asd.png
-  favicon: assets/icoo.ico
-  gravatar: # Email MD5 hash
-  description: "Nothing is true." # used by search engines
+# Site settings 配置站点
+title: 'CenariusYZ'
+description: '-here'
+keyword: 'CenariusYZ, OI'
+url: 'http://cenariusyz.github.io' # your host
 
-  # Header and footer text
-  header_text: > #two or three lines to describe your site
-     <p> Nothing is true.<br>Everything is permitted.</p>
-  header_text_feature_image: assets/img/pexels/header.jpg
-  footer_text: >
-   <p> 2018 CenariusYZ </p>
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
 
-  # Icons
-  rss: true  # Make sure you created a feed.xml with feed.xml layout
-  email_address: 409004007@qq.com
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  gitlab:
-  github: 
-  google_plus:
-  instagram:
-  keybase:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: # "twitter username"
-  vimeo:
-  wordpress:
-  youtube:
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
 
-  # Scripts / Features 
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
-  katex: true # Enable if using math markup
-  portfolio: true
-  search: true
-  tags: true
-  
-  
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next_post: "NPG"
-  str_previous_post: "PPG"
-  str_next_page: "wwa"
-  str_previous_page: "wawaw"
-  str_continue_reading: "aaaa"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+# Footer
+footer:
+  since: 2017
 
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+# Author 配置博主信息
+author: 'CenariusYZ'
+nickname: 'YZ'
+bio: 'OIer / Drumer / Loser'
+avatar: '/assets/img/head.jpg'
 
-  # Post navigation
-  post_navigation: true
+# Search
+search: true
 
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
+# Night mode
+nightMode: true
 
-# PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
+# Comments
+disqus: true
+disqus_url: ''
 
-# BUILD SETTINGS
+livere: false
+livere_uid: MTAyMC8yODEwMC80Njcz
+
+# Reward 赞赏功能 by Ray-Eldath
+reward:
+  enable: false
+  reward_comment: '真诚赞赏 手有余香'
+  wechatpay: 'http://ray-eldath.image.alimmdn.com/basic/wechatpay.jpg'
+  alipay: 'http://ray-eldath.image.alimmdn.com/basic/alipay.jpg'
+
+# b2t 回到顶部 by Ray-Eldath
+b2t: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  email: '409004007@qq.com'
+  github: '//github.com/cenariusYZ'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
 markdown: kramdown
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag]
-#theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
+kramdown:
+  input: GFM
+
+# RSS
+RSS: false
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
+
+# Plugins
+plugins: [jekyll-paginate]
