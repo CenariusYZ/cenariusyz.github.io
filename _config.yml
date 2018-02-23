@@ -14,7 +14,7 @@ theme_settings:
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <p> Nothing is true.<br>Everything is permitted.</p>
-  header_text_feature_image: assets/img/pexels/triangular.jpeg
+  header_text_feature_image: assets/img/pexels/header.jpg
   footer_text: >
    <p> 2018 CenariusYZ </p>
 
