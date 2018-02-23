@@ -13,7 +13,7 @@ theme_settings:
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p>Change header text in <code>_config.yml</code> <br> to update this feature.</p>
+     <p> Nothing is true.<br>Everything is permitted.</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
@@ -58,7 +58,7 @@ theme_settings:
   str_email: "Email"
   str_next_post: "下一主题"
   str_previous_post: "上一主题"
-  str_next_page: "x下一页"
+  str_next_page: "下一页"
   str_previous_page: "上一页"
   str_continue_reading: "继续阅读"
   str_javascript_required_disqus: "Please enable JavaScript to view comments."
