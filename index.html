@@ -7,10 +7,8 @@ header-img: assets/img/startpic.jpg
 
 {% include header.html %}
 
-<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
-    {% if page.header-img %}
+<div class="g-banner home-banner" data-theme="{{ site.theme-color }}"> # {{ site.theme-color | prepend: 'banner-theme-' }}
     <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
-    {% endif %}
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
 </div>
