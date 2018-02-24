@@ -8,11 +8,11 @@ header-img: assets/img/startpic.jpg
 {% include header.html %}
 
 <div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
-    <h2>{{ page.home-title }}</h2>
-    <h3>{{ page.description }}</h3>
     {% if page.header-img %}
     <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
     {% endif %}
+    <h2>{{ page.home-title }}</h2>
+    <h3>{{ page.description }}</h3>
 </div>
 
 <main class="g-container home-content">
