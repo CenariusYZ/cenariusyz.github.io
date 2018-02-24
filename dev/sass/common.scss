@@ -665,6 +665,14 @@
         font-size: 36px;
         line-height: 300px;
     }
+    .header-img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 101%;
+        z-index: 0;
+    }
 }
 .tags-content {
     width: 695px;
