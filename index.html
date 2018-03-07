@@ -101,7 +101,7 @@ header-img: assets/img/startpic.jpg
           <h3>Links</h3>
           <hr>
           a
-          {% for link in site.links %}
+          {% for link in site.data.links %}
             <a href="{{ link.website }}" target="blank" class="tag">{{ link.name }}</a>
           {% endfor %}
         </div>
