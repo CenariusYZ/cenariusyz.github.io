@@ -97,8 +97,12 @@ header-img: assets/img/startpic.jpg
         </div>
         {% endif %}
 
-        <div class="g-sidebar">
-          <h2>Links</h2>
+        <div class="g-sidebar" style="margin-top:15px">
+          <h3>Links</h3>
+          <hr>
+            {% for link in site.data.links %}
+              <a href="{% link.websit %}" target="_blank" class="tag">{% link.name %}</a>
+            {% endfor %}
         </div>
     </aside>
 
