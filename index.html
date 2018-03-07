@@ -99,10 +99,11 @@ header-img: assets/img/startpic.jpg
 
         <div class="g-sidebar" style="margin-top:15px">
           <h3>Links</h3>
-          <hr>
-          {% for link in site.data.links %}
-            <a href="{{ link.website }}" target="blank" class="tag">{{ link.name }}</a>
-          {% endfor %}
+          <section class="tags-card">
+            {% for link in site.data.links %}
+              <a href="{{ link.website }}" target="blank" class="tag">{{ link.name }}</a>
+            {% endfor %}
+          </section>
         </div>
     </aside>
 
