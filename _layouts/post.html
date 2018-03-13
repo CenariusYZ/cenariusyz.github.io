@@ -113,6 +113,22 @@
     {% endif %}
   </section>
 
+  <div id="gitmentContainer"></div>
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <script>
+  var gitment = new Gitment({
+      owner: 'CenariusYZ',
+      repo: 'https://github.com/CenariusYZ/cenariusyz.github.io',
+      oauth: {
+          client_id: 'baf4ebb09d659019dd28',
+          client_secret: 'c4983415d3016f969bd77799d277cfaef1db132d',
+      },
+  });
+  gitment.render('gitmentContainer');
+
+</script>
+
   {% include footer.html %}
 
   <script src="/assets/js/social-share.min.js"></script>
