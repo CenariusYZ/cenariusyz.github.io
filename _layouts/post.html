@@ -113,13 +113,9 @@
     {% endif %}
   </section>
 
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-  <div id="comment"></div>
+  <div class="comments vcomment v" id="comment"></div>
   <script>
       new Valine({
-          // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-          av: AV,
           avatar: 'mm',
           guest_info: ['nick','mail'],
           el: '#comment', //
