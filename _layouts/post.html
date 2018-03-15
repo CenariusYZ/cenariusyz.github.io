@@ -116,18 +116,19 @@
   <div id="gitmentContainer"></div>
   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <div id="comment"></div>
   <script>
-  var gitment = new Gitment({
-      id: '{{ page.date }}',
-      owner: 'CenariusYZ',
-      repo: 'cenariusyz.github.io',
-      oauth: {
-          client_id: 'baf4ebb09d659019dd28',
-          client_secret: 'c4983415d3016f969bd77799d277cfaef1db132d',
-      },
-  });
-  gitment.render('gitmentContainer');
-
+      new Valine({
+          // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+          av: AV,
+          avatar: 'mm',
+          guest_info: ['nick','mail'],
+          el: '#comment', //
+          app_id: 'zPTQOY3sCCt2HwLHdbyAmxed-gzGzoHsz', // 这里填写上面得到的APP ID
+          app_key: 'Of39QdnjzY8sjEYLfNw1iU9g', // 这里填写上面得到的APP KEY
+          placeholder: '嗷呜~' // [v1.0.7 new]留言框占位提示文字
+      });
+  </script>
 </script>
 
   {% include footer.html %}
@@ -147,28 +148,6 @@
     });
   </script>
 
-{% if site.disqus %}
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document,
-        s = d.createElement('script');
-      /*写入自己的disqus信息*/
-      s.src = '{{ site.disqus_url }}';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-
-</script>
-{% endif %}
 
 {% if site.livere %}
 <script>
